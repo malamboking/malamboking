@@ -254,6 +254,107 @@ footer{
   .about-gallery img {
     height: 150px;
   }
+  
+/* ARTISTIC PROFILES */
+.artistic-profiles {
+  background: #080808;
+  padding: 90px 5%;
+}
+
+.profiles-title {
+  text-align: center;
+  color: #d8b66b;
+  font-size: 36px;
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+}
+
+.profiles-intro {
+  text-align: center;
+  color: #aaa;
+  margin: 0 auto 55px;
+  max-width: 700px;
+  line-height: 1.8;
+}
+
+.profiles-grid {
+  max-width: 1250px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+  align-items: start;
+}
+
+.profile-card {
+  background: #101010;
+  border: 1px solid #80652e;
+  overflow: hidden;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.profile-info {
+  padding: 30px;
+}
+
+.profile-info h3 {
+  color: #d8b66b;
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.profile-role {
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+
+.profile-info p {
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.85;
+  margin-bottom: 18px;
+}
+
+.profile-info ul {
+  color: #ccc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-info li {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+@media(max-width:750px) {
+  .profiles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-photo {
+    height: 390px;
+  }
+
+  .profiles-title {
+    font-size: 29px;
+  }
+
+  .profile-info {
+    padding: 22px;
+  }
+}
 </style>
 </head>
 
@@ -395,6 +496,165 @@ artistic experience tailored to your production.
 <img src="IMG_7445.jpeg" alt="Live performance">
 <img src="IMG_7453.jpeg" alt="Malambo King production">
 </div>
+
+<!-- ARTISTIC PROFILES -->
+<section class="artistic-profiles" id="artists">
+
+  <h2 class="profiles-title">ARTISTIC PROFILES</h2>
+
+  <p class="profiles-intro">
+    Meet the artistic directors and principal dancers
+    behind MALAMBO KING.
+  </p>
+
+  <div class="profiles-grid">
+
+    <!-- ROMINA -->
+    <article class="profile-card">
+
+      <img
+        class="profile-photo"
+        src="a15760ea-c124-4002-b590-29b7fc890f46.jpeg"
+        alt="Romina García Fleury">
+
+      <div class="profile-info">
+
+        <h3>ROMINA GARCÍA FLEURY</h3>
+
+        <div class="profile-role">
+          ARTISTIC DIRECTOR · CHOREOGRAPHER · PRINCIPAL DANCER
+        </div>
+
+        <p>
+          A dancer and choreographer with a solid academic
+          background and extensive international experience,
+          Romina García Fleury began her dance training at
+          the age of seven.
+        </p>
+
+        <p>
+          She graduated as a Classical Dance Teacher from
+          the Higher School of Artistic Education of Tucumán.
+          In 2000, she was selected through an audition to
+          receive a scholarship from the prestigious
+          <strong>Julio Bocca Foundation</strong>, one of the
+          leading institutions in Argentine dance.
+        </p>
+
+        <p>
+          She continued her professional development under
+          distinguished artists associated with the
+          <strong>Teatro Colón in Buenos Aires</strong>,
+          subsequently broadening her training in tango,
+          Argentine folk dance, flamenco, Spanish and Arabic
+          dances, and Latin American rhythms.
+        </p>
+
+        <p>
+          She also holds a qualification as an Argentine
+          Folk Dance Teacher from the Eduardo Albistur
+          Conservatory in Buenos Aires.
+        </p>
+
+        <p>
+          Her career includes performances, tours and
+          educational activities throughout Europe,
+          including a tour of Italy and France in 2017,
+          during which she taught classes and performed
+          in tango and folk dance productions.
+        </p>
+
+        <p>
+          Her classical training, combined with an in-depth
+          knowledge of Argentina's popular dance traditions,
+          gives MALAMBO KING a distinctive choreographic
+          identity defined by elegance, technical precision
+          and expressive power.
+        </p>
+
+      </div>
+    </article>
+
+    <!-- NICOLÁS -->
+    <article class="profile-card">
+
+      <img
+        class="profile-photo"
+        src="ec5665a3-14e6-49e1-89cb-306008026519.jpeg"
+        alt="Nicolás Correa">
+
+      <div class="profile-info">
+
+        <h3>NICOLÁS CORREA</h3>
+
+        <div class="profile-role">
+          ARTISTIC DIRECTOR · CHOREOGRAPHER · PRINCIPAL DANCER
+        </div>
+
+        <p>
+          A leading exponent of Argentine malambo,
+          Nicolás Correa began his artistic training at
+          the age of three and has built an outstanding
+          career, earning major awards at some of
+          Argentina's most important folk festivals.
+        </p>
+
+        <p>
+          A qualified Argentine Folk Dance Teacher and
+          graduate of the Eduardo Albistur Conservatory
+          in Buenos Aires, he has received, among other
+          distinctions, the following titles:
+        </p>
+
+        <ul>
+          <li><strong>1997</strong> — Argentine Children's Malambo Champion, Laborde, Córdoba.</li>
+          <li><strong>2006</strong> — Argentine Northern-Style Malambo Champion, Baradero, Buenos Aires.</li>
+          <li><strong>2014</strong> — Individual Malambo Champion, Cosquín National Folk Festival.</li>
+          <li><strong>2015</strong> — Argentine Southern-Style Malambo Champion, Baradero.</li>
+          <li><strong>2015</strong> — Cosquín Group Malambo Champion.</li>
+          <li><strong>2015</strong> — Outstanding New Talent of the Cosquín National Folk Festival.</li>
+        </ul>
+
+        <p>
+          His talent gained widespread television exposure
+          when he won <strong>ShowMatch</strong>, the renowned
+          television programme hosted by Marcelo Tinelli,
+          with a spectacular production featuring bombo
+          drums and malambo. He also reached the final of
+          <strong>Talento Argentino</strong>, presenting a
+          large-scale choreographic production featuring
+          twenty performers on stage.
+        </p>
+
+        <p>
+          Since 2006, he has pursued an intensive
+          international career, touring Italy, France,
+          the United States and Canada. Among his notable
+          engagements was a two-month season in France
+          in 2012, during which he gave more than thirty
+          theatrical performances.
+        </p>
+
+        <p>
+          In <strong>2024, he won the competition to become
+          Director of the Folk Dance Ballet of the Province
+          of Tucumán</strong>, one of the leading ensembles
+          representing the province's folk traditions.
+        </p>
+
+        <p>
+          His extraordinary command of malambo, his
+          experience as a choreographer and his ability
+          to conceive large-scale stage productions are
+          central elements of MALAMBO KING's artistic identity.
+        </p>
+
+      </div>
+    </article>
+
+  </div>
+</section>
+<!-- END ARTISTIC PROFILES -->
 
 </section>
 
