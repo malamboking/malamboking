@@ -658,6 +658,490 @@ artistic experience tailored to your production.
 
 </section>
 
+<style>
+#international-experience {
+  background: #080808;
+  color: #f5f0e5;
+  padding: 90px 6%;
+  font-family: Georgia, serif;
+  overflow: hidden;
+}
+
+#international-experience .ie-container {
+  max-width: 1250px;
+  margin: auto;
+}
+
+#international-experience .ie-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+#international-experience .ie-heading h2 {
+  color: #d7ae57;
+  font-size: clamp(32px, 5vw, 55px);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 15px 0;
+}
+
+#international-experience .ie-heading p {
+  color: #ddd;
+  letter-spacing: 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+#international-experience .ie-intro {
+  max-width: 850px;
+  text-align: center;
+  margin: 0 auto 50px;
+  line-height: 1.8;
+  color: #d5d5d5;
+  font-size: 16px;
+}
+
+#international-experience .ie-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 65px;
+}
+
+#international-experience .ie-gallery img {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+  border: 1px solid #80632f;
+  display: block;
+}
+
+#international-experience .ie-gallery .ie-wide {
+  grid-column: span 2;
+}
+
+#international-experience .ie-section-title {
+  color: #d7ae57;
+  text-transform: uppercase;
+  font-size: 23px;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #8b6b32;
+  padding-bottom: 12px;
+  margin-bottom: 25px;
+}
+
+#international-experience .ie-regions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+}
+
+#international-experience .ie-region {
+  padding: 22px;
+  border: 1px solid rgba(215,174,87,.35);
+  background: linear-gradient(145deg,#151515,#090909);
+}
+
+#international-experience .ie-region h3 {
+  color: #d7ae57;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0 0 17px;
+}
+
+#international-experience .ie-region h4 {
+  color: #fff;
+  font-size: 16px;
+  margin: 18px 0 7px;
+}
+
+#international-experience .ie-region p {
+  color: #d0d0d0;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 7px 0;
+}
+
+#international-experience .ie-ukraine {
+  margin-top: 45px;
+  padding: 35px;
+  border: 1px solid #b28b42;
+  background: linear-gradient(135deg,#17130c,#080808);
+}
+
+#international-experience .ie-ukraine h3 {
+  color: #e1ba68;
+  font-size: 27px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+#international-experience .ie-editions {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  margin-top: 25px;
+}
+
+#international-experience .ie-edition {
+  border-left: 2px solid #bd9145;
+  padding: 10px 17px;
+}
+
+#international-experience .ie-edition h4 {
+  color: #e1ba68;
+  font-size: 19px;
+  margin: 0 0 12px;
+}
+
+#international-experience .ie-edition p {
+  color: #ddd;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+#international-experience .ie-awards {
+  margin-top: 55px;
+}
+
+#international-experience .ie-awards-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 25px;
+}
+
+#international-experience .ie-award {
+  border: 1px solid #80632f;
+  padding: 28px;
+  text-align: center;
+}
+
+#international-experience .ie-award strong {
+  display: block;
+  color: #e1ba68;
+  font-size: 37px;
+  margin-bottom: 12px;
+}
+
+#international-experience .ie-award p {
+  color: #ddd;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+#international-experience .ie-closing {
+  color: #d7ae57;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin-top: 55px;
+  text-transform: uppercase;
+}
+
+@media(max-width:750px) {
+  #international-experience {
+    padding: 60px 5%;
+  }
+
+  #international-experience .ie-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #international-experience .ie-gallery img {
+    height: 190px;
+  }
+
+  #international-experience .ie-gallery .ie-wide {
+    grid-column: span 2;
+  }
+
+  #international-experience .ie-regions {
+    grid-template-columns: 1fr;
+  }
+
+  #international-experience .ie-editions {
+    grid-template-columns: 1fr;
+  }
+
+  #international-experience .ie-awards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #international-experience .ie-ukraine {
+    padding: 22px;
+  }
+}
+</style>
+
+<section id="international-experience">
+<div class="ie-container">
+
+  <div class="ie-heading">
+    <h2>International Experience</h2>
+    <p>Our Journey Around The World</p>
+  </div>
+
+  <p class="ie-intro">
+    MALAMBO KING has established an international track record
+    through performances at major festivals, entertainment
+    productions and artistic seasons across different continents.
+    Representing Argentine culture on international stages,
+    our journey reflects artistic excellence, dedication and passion.
+  </p>
+
+  <!-- PHOTO GALLERY -->
+
+  <div class="ie-gallery">
+
+    <img class="ie-wide"
+      src="IMG_0360.jpeg"
+      alt="International performance">
+
+    <img src="IMG_0976.jpeg"
+      alt="Argentine tango performance">
+
+    <img src="IMG_3151.jpeg"
+      alt="Malambo King performance">
+
+    <img src="IMG_5012.jpeg"
+      alt="International artistic performance">
+
+    <img src="IMG_8592.jpeg"
+      alt="Romina García Fleury">
+
+    <img src="IMG_9632.jpeg"
+      alt="International show">
+
+    <img
+      src="9cc2f879-d408-40b3-8c64-8ca08e5b799f.jpeg"
+      alt="Romina and Nicolás">
+
+  </div>
+
+  <h3 class="ie-section-title">International Destinations</h3>
+
+  <div class="ie-regions">
+
+    <article class="ie-region">
+      <h3>The Middle East</h3>
+
+      <h4>Saudi Arabia — Riyadh Season</h4>
+      <p>
+        Participation in Riyadh Season, including Boulevard World
+        in 2023 and Eid al-Fitr celebrations.
+      </p>
+
+      <h4>Saudi Arabia — NAWAL NOW</h4>
+      <p>
+        In 2022, the company opened the international show
+        NAWAL NOW, starring Kuwaiti singer Nawal El Kuwaiti
+        and produced by Rotana.
+      </p>
+
+      <h4>United Arab Emirates — Sheikh Zayed Festival</h4>
+      <p>
+        Performances at the Sheikh Zayed Festival in Abu Dhabi
+        in 2019 and 2021.
+      </p>
+
+      <h4>Qatar — Sealine Festival</h4>
+      <p>
+        Performances at the Sealine Festival in Doha,
+        January 2025.
+      </p>
+
+      <h4>Lebanon</h4>
+      <p>
+        Artistic seasons and performances at private events,
+        celebrations and hotel venues during 2023 and 2024.
+      </p>
+    </article>
+
+    <article class="ie-region">
+      <h3>Asia</h3>
+
+      <h4>China — Sanya and Maoming</h4>
+      <p>
+        Extended artistic seasons in China, performing at
+        international hotel establishments.
+      </p>
+      <p>
+        In 2024, a season in Sanya ran from February to October.
+        In 2025, the company returned to China for a new season
+        in Maoming, Guangdong Province, with performances at
+        hotel chains including Sheraton and Wyndham.
+      </p>
+    </article>
+
+    <article class="ie-region">
+      <h3>Africa</h3>
+
+      <h4>Egypt — Sharm el-Sheikh and Marsa Alam</h4>
+      <p>
+        Artistic seasons at five-star hotels in Sharm el-Sheikh
+        and Marsa Alam in 2019, 2020, 2022 and 2024.
+      </p>
+      <p>
+        In 2019, the company was invited to stage the opening
+        performance of the 48th edition of MISS INTERCONTINENTAL,
+        held in Sharm el-Sheikh.
+      </p>
+    </article>
+
+    <article class="ie-region">
+      <h3>Europe</h3>
+
+      <h4>France and Italy</h4>
+      <p>
+        Nicolás Correa performed in Italy from 2006 onwards
+        and undertook a notable tour of France in 2012,
+        giving more than thirty performances over two months.
+      </p>
+      <p>
+        Romina García Fleury also carried out artistic
+        and educational activities in both countries in 2017.
+      </p>
+
+      <h4>Türkiye — Antalya</h4>
+      <p>
+        In 2021, MALAMBO KING undertook an extensive artistic
+        season from May to October, with performances at
+        more than fifty hotel establishments in Antalya.
+      </p>
+    </article>
+
+    <article class="ie-region">
+      <h3>The Americas</h3>
+
+      <h4>United States and Canada</h4>
+      <p>
+        The careers of the company's directors include
+        artistic tours in the United States and Canada.
+      </p>
+
+      <h4>Argentina</h4>
+      <p>
+        Performances at festivals and celebrations across
+        several provinces, including Córdoba and Neuquén.
+      </p>
+
+      <h4>Bolivia and Chile</h4>
+      <p>
+        Participation in cultural festivals and events,
+        including the Tarija Chacarera Festival,
+        the Bermejo International Lapacho Festival
+        and the Latin American Cultural Integration
+        Gathering in Caldera.
+      </p>
+    </article>
+
+  </div>
+
+  <!-- UKRAINE -->
+
+  <div class="ie-ukraine">
+
+    <h3>Ukraine — A Particularly Significant Artistic Presence</h3>
+
+    <p>
+      MALAMBO KING's international career includes a distinguished
+      presence in Ukraine, where its artists have taken part
+      in cultural activities since 2020.
+    </p>
+
+    <p>
+      Following its initial virtual presentations and the first
+      live performances in 2021, the company became the centrepiece
+      of a series of events dedicated to Argentine culture in Kyiv.
+    </p>
+
+    <div class="ie-editions">
+
+      <div class="ie-edition">
+        <h4>2024 — First Edition</h4>
+        <p>
+          Presentation of "An Evening of Argentine Tango and Malambo",
+          organised by the Embassy of Argentina at the National
+          Operetta Theatre of Ukraine in Kyiv.
+        </p>
+        <p>
+          The visit also included public performances in Irpin
+          and at the Ukrainian Chamber of Commerce and Industry.
+        </p>
+      </div>
+
+      <div class="ie-edition">
+        <h4>2025 — Second Edition</h4>
+        <p>
+          The company returned to Kyiv for a second edition
+          of the show, further strengthening its recognition
+          among Ukrainian audiences.
+        </p>
+      </div>
+
+      <div class="ie-edition">
+        <h4>12 November 2026 — Third Edition</h4>
+        <p>
+          On 12 November 2026, Romina García Fleury and
+          Nicolás Correa returned to the National Operetta
+          Theatre of Ukraine in Kyiv to headline the third
+          edition of this production, bringing together
+          outstanding Argentine and Ukrainian performers
+          in a celebration of music, tango and the artistic
+          traditions of both countries.
+        </p>
+        <p>
+          The third edition further strengthened the cultural
+          connection between Argentina and Ukraine, reaffirming
+          the power of art to build bridges between nations
+          and bring audiences of different nationalities closer together.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- AWARDS AND RECOGNITION -->
+
+  <div class="ie-awards">
+
+    <h3 class="ie-section-title">Awards and Recognition</h3>
+
+    <div class="ie-awards-grid">
+
+      <div class="ie-award">
+        <strong>2018</strong>
+        <p>
+          The MALAMBO KING show was declared of cultural
+          and legislative interest by the Honourable
+          Legislature of the Province of Tucumán,
+          in recognition of its contribution to promoting
+          and preserving Argentine traditions.
+        </p>
+      </div>
+
+      <div class="ie-award">
+        <strong>2024</strong>
+        <p>
+          The company's growth enabled it to operate
+          three artistic ensembles simultaneously
+          at different international destinations,
+          demonstrating its production capacity,
+          organisational strength and commercial expansion.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="ie-closing">
+    Argentine Culture Without Borders
+  </div>
+
+</div>
+</section>
+
 <section id="our-show">
   <h2>OUR SHOW</h2>
   <p>
