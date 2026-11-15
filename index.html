@@ -164,6 +164,96 @@ footer{
   .slide{transition:none}
   html{scroll-behavior:auto}
 }
+  
+/* ABOUT US - MALAMBO KING */
+.about-show {
+  background: #080808;
+  padding: 90px 5%;
+}
+
+.about-layout {
+  max-width: 1250px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  align-items: center;
+}
+
+.about-text {
+  text-align: left;
+}
+
+.about-text h2 {
+  text-align: left;
+  font-size: 38px;
+  color: #d8b66b;
+}
+
+.about-text .tagline {
+  color: #d8b66b;
+  font-weight: bold;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.about-text p {
+  color: #ccc;
+  font-size: 15px;
+  line-height: 1.85;
+  margin-bottom: 18px;
+}
+
+.about-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.about-photos img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+  border: 1px solid #80652e;
+  transition: .4s;
+}
+
+.about-photos img:hover {
+  transform: scale(1.025);
+  border-color: #d8b66b;
+}
+
+.about-gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  margin-top: 35px;
+}
+
+.about-gallery img {
+  width: 100%;
+  height: 145px;
+  object-fit: cover;
+  border: 1px solid #80652e;
+}
+
+@media(max-width:750px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .about-text h2 {
+    font-size: 32px;
+  }
+
+  .about-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-gallery img {
+    height: 150px;
+  }
 </style>
 </head>
 
@@ -208,6 +298,105 @@ footer{
   </div>
 
 </div>
+
+<!-- ABOUT US -->
+<section class="about-show" id="about">
+
+<div class="about-layout">
+
+<div class="about-text">
+
+<h2>ABOUT US</h2>
+
+<h3 class="tagline">
+THE PASSION, STRENGTH AND SOUL OF ARGENTINA,
+ON STAGE FOR THE WORLD.
+<br><br>
+A POWERFUL SHOW. A UNIQUE CULTURAL EXPERIENCE.
+</h3>
+
+<p>
+MALAMBO KING is an Argentine dance and entertainment
+company founded in 2017 in Tucumán, Argentina, and
+directed by renowned dancers and choreographers
+Romina García Fleury and Nicolás Correa.
+</p>
+
+<p>
+With a professional cast of 20 talented artists,
+we create spectacular productions that bring the
+passion, strength and soul of Argentina to
+international stages.
+</p>
+
+<p>
+Our performances combine the explosive energy of
+Malambo, the elegance and sensuality of Tango,
+the powerful rhythms of traditional Bombo drums,
+the spectacular skills of Boleadoras and the
+richness of Argentine folk dance.
+</p>
+
+<p>
+Every performance is designed to captivate audiences
+through exceptional technique, dynamic choreography,
+striking costumes, powerful rhythms and an
+unforgettable stage presence.
+</p>
+
+<p class="gold">
+<strong>AN INTERNATIONAL SHOW FOR EVERY VENUE</strong>
+</p>
+
+<p>
+MALAMBO KING has represented Argentine culture across
+Europe, Asia, Africa, the Middle East and the Americas,
+performing at international festivals, entertainment
+productions, artistic seasons and prestigious events.
+</p>
+
+<p>
+We offer versatile productions adapted to different
+formats and audiences, including:
+</p>
+
+<p>
+Theatre and live entertainment<br>
+Hotels and resorts<br>
+Festivals and cultural events<br>
+International circus productions<br>
+Corporate events and private celebrations<br>
+Special guest performances
+</p>
+
+<p>
+Whether you are looking for a spectacular full-stage
+production or an exclusive performance by a
+professional duo, MALAMBO KING delivers a distinctive
+artistic experience tailored to your production.
+</p>
+
+</div>
+
+<div class="about-photos">
+<img src="IMG_2982.jpeg" alt="Malambo King performance">
+<img src="IMG_3934.jpeg" alt="Argentine dance show">
+<img src="IMG_3938.jpeg" alt="Malambo King artists">
+<img src="IMG_3939.jpeg" alt="Argentine culture performance">
+</div>
+
+</div>
+
+<div class="about-gallery">
+<img src="IMG_3940.jpeg" alt="Malambo King show">
+<img src="IMG_3943.jpeg" alt="Argentine performance">
+<img src="IMG_3944.jpeg" alt="Malambo King artists">
+<img src="IMG_7436.jpeg" alt="Argentine dance">
+<img src="IMG_7445.jpeg" alt="Live performance">
+<img src="IMG_7453.jpeg" alt="Malambo King production">
+</div>
+
+</section>
 
 <section id="our-show">
   <h2>OUR SHOW</h2>
