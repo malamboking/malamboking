@@ -1163,6 +1163,195 @@ artistic experience tailored to your production.
   </p>
 </section>
 
+<style>
+.gallery-section {
+  padding: 80px 5%;
+  background: #0b0b0b;
+  color: #fff;
+}
+
+.gallery-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.gallery-heading h2 {
+  font-size: 38px;
+  letter-spacing: 5px;
+  margin-bottom: 15px;
+}
+
+.gallery-heading p {
+  color: #aaa;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+  transition: opacity .3s ease;
+}
+
+.gallery-grid img:hover {
+  opacity: .75;
+}
+
+.gallery-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: rgba(0,0,0,.96);
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+
+.gallery-lightbox.active {
+  display: flex;
+}
+
+.gallery-lightbox img {
+  max-width: 95%;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+.gallery-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .gallery-heading h2 {
+    font-size: 30px;
+  }
+}
+</style>
+
+<section id="gallery" class="gallery-section">
+
+  <div class="gallery-heading">
+    <h2>GALLERY</h2>
+    <p>Moments of Argentine culture, passion and energy.</p>
+  </div>
+
+  <div class="gallery-grid">
+
+    <img src="000455e4-302a-495d-af0a-f439166357de.jpeg" alt="Malambo King performance">
+    <img src="025fc0e9-2c72-4ce5-89dc-d6bd2310c52e.jpeg" alt="Argentine culture show">
+    <img src="073c1b29-29a2-462b-9528-082b9ca99048.jpeg" alt="Malambo King artists">
+    <img src="0780f794-5fc5-4e05-abb3-e6af168fba91.jpeg" alt="Argentine dance">
+    <img src="09006fd7-a3dd-47f3-902f-96501947353f.jpeg" alt="Live performance">
+    <img src="1530f106-e8bb-4247-b249-e322d329d7dc.jpeg" alt="Malambo show">
+    <img src="19297df4-0033-430d-9357-5d26a4854cf0.jpeg" alt="Argentine artists">
+    <img src="3e99a284-e790-4999-b464-d4aa00f9c07d.jpeg" alt="Traditional dance">
+    <img src="471f4126-c7d5-4199-b59f-dbb22f6c1f30.jpeg" alt="Malambo King">
+    <img src="481c2c4f-78fd-455f-80d6-e385840bd678.jpeg" alt="Argentine performance">
+    <img src="4a619a08-21df-4f2e-bc7b-a056988474cd.jpeg" alt="Dance show">
+    <img src="561bb34d-ae3f-4b25-90fc-3dbc735ba4da.jpeg" alt="Malambo performance">
+    <img src="5fd9532d-d612-417a-951a-3229a661172b.jpeg" alt="Argentine culture">
+    <img src="67b26c00-3512-4726-8a99-28558f77ba0b.jpeg" alt="Live dance">
+    <img src="7d3f2471-6d0e-4bdc-b733-18df64292574.jpeg" alt="Malambo King show">
+    <img src="96e547b2-49e6-4865-8bc3-2a57d6cd950a.jpeg" alt="Argentine dancers">
+    <img src="9e6ce578-2ccc-40ab-b716-fb276b8705b4.jpeg" alt="Traditional Argentine show">
+
+    <img src="IMG_0977.jpeg" alt="Malambo King gallery">
+    <img src="IMG_1007.jpeg" alt="Argentine performance">
+    <img src="IMG_2288.jpeg" alt="Dance performance">
+    <img src="IMG_2322.jpeg" alt="Malambo King artists">
+    <img src="IMG_2981.jpeg" alt="Argentine culture show">
+    <img src="IMG_3942.jpeg" alt="Live performance">
+    <img src="IMG_3945.jpeg" alt="Traditional dance">
+    <img src="IMG_3946.jpeg" alt="Malambo show">
+    <img src="IMG_9629.jpeg" alt="Argentine artists">
+    <img src="IMG_9649.jpeg" alt="Malambo King">
+
+    <img src="_A746005.jpeg" alt="Argentine show">
+    <img src="_A746025.jpeg" alt="Dance performance">
+    <img src="_A746030.jpeg" alt="Malambo King">
+    <img src="_A746038.jpeg" alt="Argentine culture">
+    <img src="_A746049.jpeg" alt="Live dance">
+    <img src="_A746055.jpeg" alt="Malambo performance">
+    <img src="_A746065.jpeg" alt="Argentine artists">
+    <img src="_A746076.jpeg" alt="Traditional show">
+    <img src="_A746087.jpeg" alt="Dance show">
+    <img src="_A746091.jpeg" alt="Malambo King">
+    <img src="_A746149.jpeg" alt="Argentine performance">
+    <img src="_A746169.jpeg" alt="Argentine dance">
+    <img src="_A746173.jpeg" alt="Live show">
+    <img src="_A746178.jpeg" alt="Malambo performance">
+    <img src="_A746239.jpeg" alt="Argentine culture show">
+
+    <img src="a2858411-772f-49eb-82ce-aadba756ada1.jpeg" alt="Malambo King">
+    <img src="a2c6da56-3f7d-4182-a3a9-d3937c5b5405.jpeg" alt="Argentine artists">
+    <img src="b2ec9656-0ae7-40d3-8050-27bb284c60a7.jpeg" alt="Dance performance">
+    <img src="bf41b78c-3335-45a1-8a95-920a727fd8af.jpeg" alt="Malambo show">
+    <img src="c478fce5-ca88-4356-9f4a-bcaefcfdc0bf.jpeg" alt="Argentine culture">
+    <img src="cf3a05f9-d52b-4df7-886a-b66cafcb7873.jpeg" alt="Live performance">
+    <img src="d58e3b0e-5f09-4720-b428-fa655f92b78e.jpeg" alt="Malambo King artists">
+    <img src="d90ada78-b039-42e7-ae2b-d2d9ab2cd960.jpeg" alt="Argentine dance">
+    <img src="dc84ba7c-dde8-461f-8113-be8c1c8f210f.jpeg" alt="Traditional show">
+    <img src="dcad8da0-bbc3-4031-97e0-6517d7b73608.jpeg" alt="Malambo performance">
+    <img src="e677fdad-d002-432e-9a4d-ea4018054d1b.jpeg" alt="Argentine artists">
+    <img src="ea710aa1-05ce-479d-8028-db2c20c3798d.jpeg" alt="Dance show">
+    <img src="f5032561-8aae-47b1-a451-220d6b164d0a.jpeg" alt="Malambo King">
+    <img src="fc93a826-4bee-46f1-971c-40c17cbf7d06.jpeg" alt="Argentine culture">
+
+  </div>
+
+</section>
+
+<div class="gallery-lightbox" id="galleryLightbox">
+  <button class="gallery-close" id="galleryClose">&times;</button>
+  <img id="galleryLargeImage" src="" alt="Malambo King photograph">
+</div>
+
+<script>
+const galleryImages = document.querySelectorAll(".gallery-grid img");
+const galleryLightbox = document.getElementById("galleryLightbox");
+const galleryLargeImage = document.getElementById("galleryLargeImage");
+const galleryClose = document.getElementById("galleryClose");
+
+galleryImages.forEach(function(img) {
+  img.addEventListener("click", function() {
+    galleryLargeImage.src = this.src;
+    galleryLightbox.classList.add("active");
+  });
+});
+
+galleryClose.addEventListener("click", function() {
+  galleryLightbox.classList.remove("active");
+});
+
+galleryLightbox.addEventListener("click", function(e) {
+  if (e.target === galleryLightbox) {
+    galleryLightbox.classList.remove("active");
+  }
+});
+</script>
+
 </main>
 
 </footer>
