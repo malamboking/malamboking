@@ -1351,6 +1351,102 @@ galleryLightbox.addEventListener("click", function(e) {
   }
 });
 </script>
+  
+<style>
+.videos-section {
+  padding: 80px 5%;
+  background: #0b0b0b;
+  color: #fff;
+}
+
+.videos-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.videos-heading h2 {
+  font-size: 38px;
+  letter-spacing: 5px;
+  margin-bottom: 15px;
+}
+
+.videos-heading p {
+  color: #aaa;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.videos-grid video {
+  width: 100%;
+  display: block;
+  background: #000;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .videos-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .videos-heading h2 {
+    font-size: 30px;
+  }
+}
+</style>
+
+<section id="videos" class="videos-section">
+
+  <div class="videos-heading">
+    <h2>VIDEOS</h2>
+    <p>MALAMBO KING • OFFICIAL PERFORMANCES</p>
+  </div>
+
+  <div class="videos-grid">
+
+    <video controls playsinline preload="metadata">
+      <source src="601ce374-3017-4243-9c67-c73c050cf15b.mp4" type="video/mp4">
+    </video>
+
+    <video controls playsinline preload="metadata">
+      <source src="RPReplay_Final1684715047.mp4" type="video/mp4">
+    </video>
+
+    <video controls playsinline preload="metadata">
+      <source src="Tango_1_comprimido.mp4" type="video/mp4">
+    </video>
+
+    <video controls playsinline preload="metadata">
+      <source src="Tango_5_comprimido.mp4" type="video/mp4">
+    </video>
+
+    <video controls playsinline preload="metadata">
+      <source src="Tango_6_comprimido.mp4" type="video/mp4">
+    </video>
+
+    <video controls playsinline preload="metadata">
+      <source src="Tango_11_comprimido.mp4" type="video/mp4">
+    </video>
+
+    <video controls playsinline preload="metadata">
+      <source src="Tango_7_comprimido.mp4" type="video/mp4">
+    </video>
+
+    <video controls playsinline preload="metadata">
+      <source src="Tango_9_comprimido.mp4" type="video/mp4">
+    </video>
+
+  </div>
+
+</section>
+
 
 </main>
 
