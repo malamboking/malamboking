@@ -1352,6 +1352,85 @@ galleryLightbox.addEventListener("click", function(e) {
 });
 </script>
   
+<section id="videos" class="videos-section">
+  <div class="videos-container">
+    <h2>VIDEOS</h2>
+    <p>MALAMBO KING • OFFICIAL PERFORMANCES</p>
+
+    <div class="videos-grid">
+
+      <video controls playsinline preload="metadata">
+        <source src="601ce374-3017-4243-9c67-c73c050cf15b.mov" type="video/quicktime">
+      </video>
+
+      <video controls playsinline preload="metadata">
+        <source src="RPReplay_Final1684715047.mov" type="video/quicktime">
+      </video>
+
+      <video controls playsinline preload="metadata">
+        <source src="Tango_1_comprimido_MP4_CORRECTO.mov" type="video/quicktime">
+      </video>
+
+      <video controls playsinline preload="metadata">
+        <source src="Tango_5_comprimido_MP4_CORRECTO.mov" type="video/quicktime">
+      </video>
+
+      <video controls playsinline preload="metadata">
+        <source src="Tango_7_comprimido_MP4_CORRECTO.mov" type="video/quicktime">
+      </video>
+
+    </div>
+  </div>
+</section>
+
+<style>
+.videos-section {
+  background: #080808;
+  color: #fff;
+  padding: 80px 6%;
+}
+
+.videos-container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.videos-section h2 {
+  text-align: center;
+  font-size: 38px;
+  letter-spacing: 5px;
+  margin-bottom: 12px;
+}
+
+.videos-section p {
+  text-align: center;
+  color: #aaa;
+  letter-spacing: 2px;
+  margin-bottom: 45px;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.videos-grid video {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #000;
+}
+
+@media (max-width: 700px) {
+  .videos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+  
 </main>
 
 </footer>
