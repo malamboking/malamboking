@@ -522,12 +522,18 @@ footer{
 
   <div class="shade"></div>
 
-  <div class="content">
-    <h1>ARGENTINE<br>CULTURE SHOW</h1>
-    <p class="subtitle">An extraordinary Argentine experience</p>
+  
+<div class="content">
+    <h1>
+      <span data-i18n="hero_title_1">ARGENTINE</span><br>
+      <span data-i18n="hero_title_2">CULTURE SHOW</span>
+    </h1>
 
-    
-  </div>
+    <p class="subtitle" data-i18n="hero_subtitle">
+      An extraordinary Argentine experience
+    </p>
+</div>
+
 
   <div class="dots" aria-label="Photo navigation">
     <span class="dot active"></span>
@@ -1742,6 +1748,98 @@ dots.forEach((dot,index)=>{
   }
 }
 </style>
+
+<script>
+const translations = {
+  en: {
+    menu: "☰ MENU",
+    nav_about: "ABOUT US",
+    nav_artists: "ARTISTIC PROFILES",
+    nav_experience: "INTERNATIONAL EXPERIENCE",
+    nav_show: "OUR SHOW",
+    nav_gallery: "GALLERY",
+    nav_videos: "VIDEOS",
+    nav_contact: "CONTACT & BOOKING"
+  },
+  es: {
+    menu: "☰ MENÚ",
+    nav_about: "SOBRE NOSOTROS",
+    nav_artists: "PERFILES ARTÍSTICOS",
+    nav_experience: "EXPERIENCIA INTERNACIONAL",
+    nav_show: "NUESTRO SHOW",
+    nav_gallery: "GALERÍA",
+    nav_videos: "VIDEOS",
+    nav_contact: "CONTACTO Y CONTRATACIONES"
+  },
+  uk: {
+    menu: "☰ МЕНЮ",
+    nav_about: "ПРО НАС",
+    nav_artists: "АРТИСТИЧНІ ПРОФІЛІ",
+    nav_experience: "МІЖНАРОДНИЙ ДОСВІД",
+    nav_show: "НАШЕ ШОУ",
+    nav_gallery: "ГАЛЕРЕЯ",
+    nav_videos: "ВІДЕО",
+    nav_contact: "КОНТАКТИ ТА БРОНЮВАННЯ"
+  },
+  fr: {
+    menu: "☰ MENU",
+    nav_about: "À PROPOS",
+    nav_artists: "PROFILS ARTISTIQUES",
+    nav_experience: "EXPÉRIENCE INTERNATIONALE",
+    nav_show: "NOTRE SPECTACLE",
+    nav_gallery: "GALERIE",
+    nav_videos: "VIDÉOS",
+    nav_contact: "CONTACT ET RÉSERVATIONS"
+  },
+  it: {
+    menu: "☰ MENU",
+    nav_about: "CHI SIAMO",
+    nav_artists: "PROFILI ARTISTICI",
+    nav_experience: "ESPERIENZA INTERNAZIONALE",
+    nav_show: "IL NOSTRO SPETTACOLO",
+    nav_gallery: "GALLERIA",
+    nav_videos: "VIDEO",
+    nav_contact: "CONTATTI E PRENOTAZIONI"
+  },
+  ar: {
+    menu: "☰ القائمة",
+    nav_about: "من نحن",
+    nav_artists: "الملفات الفنية",
+    nav_experience: "الخبرة الدولية",
+    nav_show: "عرضنا",
+    nav_gallery: "معرض الصور",
+    nav_videos: "الفيديوهات",
+    nav_contact: "الاتصال والحجوزات"
+  },
+  zh: {
+    menu: "☰ 菜单",
+    nav_about: "关于我们",
+    nav_artists: "艺术家简介",
+    nav_experience: "国际演出经历",
+    nav_show: "我们的演出",
+    nav_gallery: "图片集",
+    nav_videos: "视频",
+    nav_contact: "联系与预订"
+  }
+};
+
+function changeLanguage(language) {
+  const selected = translations[language] || translations.en;
+
+  document.querySelectorAll("[data-i18n]").forEach(element => {
+    const key = element.getAttribute("data-i18n");
+    if (selected[key]) {
+      element.textContent = selected[key];
+    }
+  });
+
+  document.documentElement.lang = language;
+  document.documentElement.dir = language === "ar" ? "rtl" : "ltr";
+}
+
+</script>
+</body>
+</html>
 
 </body>
 </html>
